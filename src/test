@@ -1,0 +1,33 @@
+//		if (!m.find()) {
+//			String[] chars = roman.toUpperCase().split("");
+//			for (int i = 0; i < chars.length; i++) {
+//				if (numeralCount.containsKey(chars[i]))
+//					numeralCount.put(chars[i], numeralCount.get(chars[i]) + 1);
+//				else
+//					numeralCount.put(chars[i], 1);
+//			}
+//
+//			// Check if non repeatable characters don't repeat
+//			Iterator it = numeralCount.entrySet().iterator();
+//			while (it.hasNext()) {
+//				Entry pair = (Entry) it.next();
+//				if (nonRepeatableChars.contains(pair.getKey())
+//						&& Integer.parseInt(pair.getValue().toString()) > 1) {
+//					return false;
+//				}
+//				it.remove(); // avoids a ConcurrentModificationException
+//			}
+//
+//			// Check for Rule 2
+//			for (int i = 0; i < chars.length - 1; i++) {
+//				if ((chars[i].equals("I") && (!chars[i+1].equals("X") && !chars[i+1]
+//						.equals("V")))
+//						|| (chars[i].equals("X") && (!chars[i+1].equals("L") && !chars[i+1]
+//								.equals("C")))
+//						|| (chars[i].equals("C") && (!chars[i+1].equals("D") && !chars[i+1]
+//								.equals("M"))))
+//					return false;
+//
+//			}
+//		} else
+//			return false;
